@@ -1,0 +1,10 @@
+$ dmesg | grep i915
+[    1.759813] i915 0000:00:02.0: vgaarb: deactivate vga console
+[    1.763096] i915 0000:00:02.0: [drm] Couldn't get system memory bandwidth
+[    1.765057] i915 0000:00:02.0: vgaarb: changed VGA decodes: olddecodes=io+mem,decodes=io+mem:owns=io+mem
+[    1.767789] i915 0000:00:02.0: [drm] Finished loading DMC firmware i915/tgl_dmc_ver2_08.bin (v2.8)
+[    1.806749] [drm] Initialized i915 1.6.0 20200917 for 0000:00:02.0 on minor 0
+[    1.828141] fbcon: i915drmfb (fb0) is primary device
+[    2.971528] i915 0000:00:02.0: [drm] fb0: i915drmfb frame buffer device
+[    5.088105] mei_hdcp 0000:00:16.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04: bound 0000:00:02.0 (ops i915_hdcp_component_ops [i915])
+[    5.302150] sof-audio-pci 0000:00:1f.3: bound 0000:00:02.0 (ops i915_audio_component_bind_ops [i915])

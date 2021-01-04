@@ -1,0 +1,102 @@
+$ dpkg -l | grep '^ii \+intel'
+ii  intel-basekit                                                           2021.1.0-2659                               amd64        Intel® oneAPI Base Toolkit
+ii  intel-basekit-getting-started                                           2021.1.0-2659                               all          Intel® oneAPI Base Toolkit
+ii  intel-gmmlib                                                            20.3.2                                      amd64        Intel(R) Graphics Memory Management Library Package
+ii  intel-gpu-tools                                                         1.25-2.1                                    amd64        tools for debugging the Intel graphics driver
+ii  intel-hpckit                                                            2021.1.0-2684                               amd64        Intel® oneAPI HPC Toolkit
+ii  intel-hpckit-getting-started                                            2021.1.0-2684                               all          Intel® oneAPI HPC Toolkit
+ii  intel-igc-core                                                          1.0.5884                                    amd64        Intel(R) Graphics Compiler for OpenCL(TM)
+ii  intel-igc-opencl                                                        1.0.5884                                    amd64        Intel(R) Graphics Compiler for OpenCL(TM)
+ii  intel-level-zero-gpu                                                    1.0.18783                                   amd64        Intel(R) Graphics Compute Runtime
+ii  intel-media-va-driver:amd64                                             20.2.0+dfsg1-1                              amd64        VAAPI driver for the Intel GEN8+ Graphics family
+ii  intel-microcode                                                         3.20201110.0ubuntu0.20.10.2                 amd64        Processor microcode firmware for Intel CPUs
+ii  intel-ocloc                                                             20.52.18783                                 amd64        Intel(R) Graphics Compute Runtime
+ii  intel-oneapi-advisor                                                    2021.1.1-43                                 amd64        Intel® Advisor
+ii  intel-oneapi-ccl-2021.1.1                                               2021.1.1-54                                 amd64        Intel® oneAPI Collective Communications Library Runtime Environment
+ii  intel-oneapi-ccl-devel                                                  2021.1.1-54                                 amd64        Intel® oneAPI Collective Communications Library
+ii  intel-oneapi-ccl-devel-2021.1.1                                         2021.1.1-54                                 amd64        Intel® oneAPI Collective Communications Library
+ii  intel-oneapi-clck                                                       2021.1.1-68                                 amd64        Intel® Cluster Checker
+ii  intel-oneapi-clck-2021.1.1                                              2021.1.1-68                                 amd64        Intel® Cluster Checker
+ii  intel-oneapi-common-licensing                                           2021.1.1-60                                 all          oneAPI Common License
+ii  intel-oneapi-common-licensing-2021.1.1                                  2021.1.1-60                                 all          oneAPI Common License
+ii  intel-oneapi-common-vars                                                2021.1.1-60                                 all          oneAPI Common Environment Scripts
+ii  intel-oneapi-compiler-cpp-eclipse-cfg                                   2021.1.2-266                                all          Intel® oneAPI DPC++/C++ Compiler 2021.1.2 for Linux* eclipse integration configuration file (C++)
+ii  intel-oneapi-compiler-dpcpp-cpp                                         2021.1.2-266                                amd64        Intel® oneAPI DPC++/C++ Compiler
+ii  intel-oneapi-compiler-dpcpp-cpp-2021.1.2                                2021.1.2-266                                amd64        Intel® oneAPI DPC++/C++ Compiler
+ii  intel-oneapi-compiler-dpcpp-cpp-and-cpp-classic                         2021.1.2-266                                amd64        Intel® oneAPI DPC++/C++ Compiler & Intel® C++ Compiler Classic 2021.1.2 for Linux* for Intel(R) 64
+ii  intel-oneapi-compiler-dpcpp-cpp-and-cpp-classic-2021.1.2                2021.1.2-266                                amd64        Intel® oneAPI DPC++/C++ Compiler & Intel® C++ Compiler Classic 2021.1.2 for Linux* for Intel(R) 64
+ii  intel-oneapi-compiler-dpcpp-cpp-and-cpp-classic-common-2021.1.2         2021.1.2-266                                all          Intel® oneAPI DPC++/C++ Compiler & Intel® C++ Compiler Classic 2021.1.2 for Linux*
+ii  intel-oneapi-compiler-dpcpp-cpp-and-cpp-classic-runtime-2021.1.2        2021.1.2-266                                amd64        Intel® oneAPI DPC++/C++ Compiler & Intel® C++ Compiler Classic 2021.1.2 for Linux* runtime package for Intel(R) 64
+ii  intel-oneapi-compiler-dpcpp-cpp-classic-fortran-shared-runtime-2021.1.2 2021.1.2-266                                amd64        Intel(R) DPC++/C++ Pro / Fortran Compiler Runtime Shared Files
+ii  intel-oneapi-compiler-dpcpp-cpp-common-2021.1.2                         2021.1.2-266                                all          Intel® oneAPI DPC++/C++ Compiler 2021.1.2 for Linux*
+ii  intel-oneapi-compiler-dpcpp-cpp-runtime                                 2021.1.2-266                                amd64        Intel® oneAPI DPC++/C++ Compiler 2021.1.2 for Linux* runtime package for Intel(R) 64
+ii  intel-oneapi-compiler-dpcpp-cpp-runtime-2021.1.2                        2021.1.2-266                                amd64        Intel® oneAPI DPC++/C++ Compiler 2021.1.2 for Linux* runtime package for Intel(R) 64
+ii  intel-oneapi-compiler-dpcpp-eclipse-cfg                                 2021.1.2-266                                all          Intel® oneAPI DPC++/C++ Compiler 2021.1.2 for Linux* eclipse integration configuration file (DPC++)
+ii  intel-oneapi-compiler-fortran                                           2021.1.2-266                                amd64        Intel® Fortran Compiler (Beta) & Intel® Fortran Compiler Classic 2021.1.2 for Linux* for Intel(R) 64
+ii  intel-oneapi-compiler-fortran-2021.1.2                                  2021.1.2-266                                amd64        Intel® Fortran Compiler (Beta) & Intel® Fortran Compiler Classic 2021.1.2 for Linux* for Intel(R) 64
+ii  intel-oneapi-compiler-fortran-common-2021.1.2                           2021.1.2-266                                all          Intel® Fortran Compiler (Beta) & Intel® Fortran Compiler Classic 2021.1.2 for Linux*
+ii  intel-oneapi-compiler-fortran-runtime-2021.1.2                          2021.1.2-266                                amd64        Intel® Fortran Compiler (Beta) & Intel® Fortran Compiler Classic 2021.1.2 for Linux* runtime package for Intel(R) 64
+ii  intel-oneapi-compiler-shared-2021.1.2                                   2021.1.2-266                                amd64        Intel(R) Compiler Shared Files
+ii  intel-oneapi-compiler-shared-common-2021.1.2                            2021.1.2-266                                all          Intel(R) Compiler Shared Files
+ii  intel-oneapi-compiler-shared-common-runtime-2021.1.2                    2021.1.2-266                                all          Intel(R) Compiler Shared Files
+ii  intel-oneapi-compiler-shared-runtime-2021.1.2                           2021.1.2-266                                amd64        Intel(R) Compiler Shared Files runtime contents
+ii  intel-oneapi-condaindex                                                 2021.1.1-58                                 amd64        oneAPI Common Install components
+ii  intel-oneapi-dal                                                        2021.1.1-79                                 amd64        Intel® oneAPI Data Analytics Library
+ii  intel-oneapi-dal-2021.1.1                                               2021.1.1-79                                 amd64        Intel® oneAPI Data Analytics Library
+ii  intel-oneapi-dal-common-2021.1.1                                        2021.1.1-79                                 all          Intel® oneAPI Data Analytics Library common
+ii  intel-oneapi-dal-common-devel-2021.1.1                                  2021.1.1-79                                 all          Intel® oneAPI Data Analytics Library common
+ii  intel-oneapi-dal-devel                                                  2021.1.1-79                                 amd64        Intel® oneAPI Data Analytics Library Development Package
+ii  intel-oneapi-dal-devel-2021.1.1                                         2021.1.1-79                                 amd64        Intel® oneAPI Data Analytics Library Development Package
+ii  intel-oneapi-dev-utilities                                              2021.1.1-197                                amd64        Dev Utilities
+ii  intel-oneapi-dev-utilities-2021.1.1                                     2021.1.1-197                                amd64        Dev Utilities
+ii  intel-oneapi-dev-utilities-eclipse-cfg                                  2021.1.1-197                                all          intel-oneapi-dev-utilities-eclipse-cfg
+ii  intel-oneapi-dnnl                                                       2021.1.1-55                                 amd64        Intel® oneAPI Deep Neural Network Library
+ii  intel-oneapi-dnnl-devel                                                 2021.1.1-55                                 amd64        Intel® oneAPI Deep Neural Network Library Development Package
+ii  intel-oneapi-dpcpp-cpp-2021.1.2                                         2021.1.2-266                                amd64        Intel® oneAPI DPC++/C++ Compiler 2021.1.2 for Linux* for Intel(R) 64
+ii  intel-oneapi-dpcpp-ct                                                   2021.1.1-59                                 amd64        Intel® DPC++ Compatibility Tool
+ii  intel-oneapi-dpcpp-ct-2021.1.1                                          2021.1.1-59                                 amd64        Intel® DPC++ Compatibility Tool
+ii  intel-oneapi-dpcpp-ct-eclipse-cfg                                       2021.1.1-59                                 all          Intel® DPC++ Compatibility Tool 2021.1.1 for Linux* eclipse integration configuration file
+ii  intel-oneapi-dpcpp-debugger                                             10.0.0-2219                                 amd64        Intel® Distribution for GDB*
+ii  intel-oneapi-dpcpp-debugger-10.0.0                                      10.0.0-2219                                 amd64        Intel® Distribution for GDB*
+ii  intel-oneapi-dpcpp-debugger-eclipse-cfg                                 10.0.0-2219                                 all          Intel® Distribution for GDB* 10.0.0 for Linux* eclipse integration configuration file
+ii  intel-oneapi-inspector                                                  2021.1.1-42                                 amd64        Intel® Inspector
+ii  intel-oneapi-ipp                                                        2021.1.1-47                                 amd64        Intel® Integrated Performance Primitives
+ii  intel-oneapi-ipp-2021.1.1                                               2021.1.1-47                                 amd64        Intel® Integrated Performance Primitives
+ii  intel-oneapi-ipp-common-2021.1.1                                        2021.1.1-47                                 all          Intel® Integrated Performance Primitives common
+ii  intel-oneapi-ipp-common-devel-2021.1.1                                  2021.1.1-47                                 all          Intel® Integrated Performance Primitives common
+ii  intel-oneapi-ipp-devel                                                  2021.1.1-47                                 amd64        Intel® Integrated Performance Primitives Development Package
+ii  intel-oneapi-ipp-devel-2021.1.1                                         2021.1.1-47                                 amd64        Intel® Integrated Performance Primitives Development Package
+ii  intel-oneapi-ippcp-2021.1.1                                             2021.1.1-54                                 amd64        Intel® Integrated Performance Primitives Cryptography
+ii  intel-oneapi-ippcp-common-2021.1.1                                      2021.1.1-54                                 all          Intel® Integrated Performance Primitives Cryptography common
+ii  intel-oneapi-ippcp-common-devel-2021.1.1                                2021.1.1-54                                 all          Intel® Integrated Performance Primitives Cryptography common
+ii  intel-oneapi-ippcp-devel                                                2021.1.1-54                                 amd64        Intel® Integrated Performance Primitives Cryptography Development Package
+ii  intel-oneapi-ippcp-devel-2021.1.1                                       2021.1.1-54                                 amd64        Intel® Integrated Performance Primitives Cryptography Development Package
+ii  intel-oneapi-itac                                                       2021.1.1-42                                 amd64        Intel® Trace Analyzer and Collector
+ii  intel-oneapi-itac-2021.1.1                                              2021.1.1-42                                 amd64        Intel® Trace Analyzer and Collector
+ii  intel-oneapi-libdpstd-devel                                             2021.1.2-266                                amd64        Intel® oneAPI DPC++ Library 2021.1.2 for Linux*
+ii  intel-oneapi-libdpstd-devel-2021.1.2                                    2021.1.2-266                                amd64        Intel® oneAPI DPC++ Library 2021.1.2 for Linux*
+ii  intel-oneapi-mkl                                                        2021.1.1-52                                 amd64        Intel® oneAPI Math Kernel Library runtime package for Intel(R) 64
+ii  intel-oneapi-mkl-2021.1.1                                               2021.1.1-52                                 amd64        Intel® oneAPI Math Kernel Library runtime package for Intel(R) 64
+ii  intel-oneapi-mkl-common-2021.1.1                                        2021.1.1-52                                 all          Intel® oneAPI Math Kernel Library 2021.1.1 for Linux* common
+ii  intel-oneapi-mkl-common-devel-2021.1.1                                  2021.1.1-52                                 all          Intel® oneAPI Math Kernel Library common
+ii  intel-oneapi-mkl-devel                                                  2021.1.1-52                                 amd64        Intel® oneAPI Math Kernel Library 2021.1.1 for Linux* development package for Intel(R) 64
+ii  intel-oneapi-mkl-devel-2021.1.1                                         2021.1.1-52                                 amd64        Intel® oneAPI Math Kernel Library 2021.1.1 for Linux* development package for Intel(R) 64
+ii  intel-oneapi-mpi                                                        2021.1.1-76                                 amd64        Intel® MPI Library Runtime Environment
+ii  intel-oneapi-mpi-2021.1.1                                               2021.1.1-76                                 amd64        Intel® MPI Library Runtime Environment
+ii  intel-oneapi-mpi-devel                                                  2021.1.1-76                                 amd64        Intel® MPI Library
+ii  intel-oneapi-mpi-devel-2021.1.1                                         2021.1.1-76                                 amd64        Intel® MPI Library
+ii  intel-oneapi-onevpl-2021.1.1                                            2021.1.1-66                                 amd64        Intel® oneAPI Video Processing Library
+ii  intel-oneapi-onevpl-devel                                               2021.1.1-66                                 amd64        Intel® oneAPI Video Processing Library
+ii  intel-oneapi-onevpl-devel-2021.1.1                                      2021.1.1-66                                 amd64        Intel® oneAPI Video Processing Library
+ii  intel-oneapi-openmp                                                     2021.1.2-266                                amd64        Intel® OpenMP* Runtime Library 2021.1.2 for Linux* for Intel(R) 64
+ii  intel-oneapi-openmp-2021.1.2                                            2021.1.2-266                                amd64        Intel® OpenMP* Runtime Library 2021.1.2 for Linux* for Intel(R) 64
+ii  intel-oneapi-openmp-common-2021.1.2                                     2021.1.2-266                                all          Intel® OpenMP* Runtime Library 2021.1.2 for Linux*
+ii  intel-oneapi-python                                                     2021.1.1-44                                 amd64        Intel® Distribution for Python*
+ii  intel-oneapi-tbb                                                        2021.1.1-119                                amd64        Intel® oneAPI Threading Building Blocks
+ii  intel-oneapi-tbb-2021.1.1                                               2021.1.1-119                                amd64        Intel® oneAPI Threading Building Blocks
+ii  intel-oneapi-tbb-common-2021.1.1                                        2021.1.1-119                                all          Intel® oneAPI Threading Building Blocks common
+ii  intel-oneapi-tbb-common-devel-2021.1.1                                  2021.1.1-119                                all          Intel® oneAPI Threading Building Blocks common
+ii  intel-oneapi-tbb-devel                                                  2021.1.1-119                                amd64        Intel® oneAPI Threading Building Blocks Development Package
+ii  intel-oneapi-tbb-devel-2021.1.1                                         2021.1.1-119                                amd64        Intel® oneAPI Threading Building Blocks Development Package
+ii  intel-oneapi-vtune                                                      2021.1.1-61                                 amd64        Intel® VTune(TM) Profiler
+ii  intel-opencl                                                            20.52.18783                                 amd64        Intel(R) Graphics Compute Runtime

@@ -1,0 +1,37 @@
+$ make sycl_hang 
+icpx -fsycl sycl_hang.cpp -g -o sycl_hang
+
+$ SYCL_BE=PI_LEVEL_ZERO gdb -q ./sycl_hang
+Reading symbols from ./sycl_hang...
+(gdb) r
+Starting program: /home/aland/sycl_tests/sycl_hang 
+warning: File "/opt/intel/oneapi/compiler/2021.1.2/linux/lib/libsycl.so.5.0.0-gdb.py" auto-loading has been declined by your `auto-load safe-path' set to "$debugdir:$datadir/auto-load".
+To enable execution of this file add
+        add-auto-load-safe-path /opt/intel/oneapi/compiler/2021.1.2/linux/lib/libsycl.so.5.0.0-gdb.py
+line to your configuration file "/home/aland/.gdbinit".
+To completely disable this security protection add
+        set auto-load safe-path /
+line to your configuration file "/home/aland/.gdbinit".
+For more information about this security protection see the
+"Auto-loading safe path" section in the GDB manual.  E.g., run from the shell:
+        info "(gdb)Auto-loading safe path"
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[New Thread 0x7ffff3abc640 (LWP 84044)]
+[New Thread 0x7ffff28b0640 (LWP 84045)]
+Device name Intel(R) Graphics [0x9a49]
+Driver version 1.0.18783
+^C
+Thread 1 "sycl_hang" received signal SIGINT, Interrupt.
+0x00007ffff727223b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+120     ../sysdeps/unix/syscall-template.S: No such file or directory.
+(gdb) bt
+#0  0x00007ffff727223b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+#1  0x00007ffff2a64a87 in L0::EventImp::hostSynchronize(unsigned long) () from /usr/local/lib/libze_intel_gpu.so.1
+#2  0x00007ffff4f1398a in piEventsWait () from /opt/intel/oneapi/compiler/2021.1.2/linux/lib/libpi_level_zero.so
+#3  0x00007ffff74c3f58 in cl::sycl::detail::event_impl::waitInternal() const () from /opt/intel/oneapi/compiler/2021.1.2/linux/lib/libsycl.so.5
+#4  0x00007ffff74c4e10 in cl::sycl::detail::event_impl::wait(std::shared_ptr<cl::sycl::detail::event_impl>) const () from /opt/intel/oneapi/compiler/2021.1.2/linux/lib/libsycl.so.5
+#5  0x00007ffff74c5129 in cl::sycl::detail::event_impl::wait_and_throw(std::shared_ptr<cl::sycl::detail::event_impl>) () from /opt/intel/oneapi/compiler/2021.1.2/linux/lib/libsycl.so.5
+#6  0x00007ffff75625ed in cl::sycl::event::wait_and_throw() () from /opt/intel/oneapi/compiler/2021.1.2/linux/lib/libsycl.so.5
+#7  0x00000000004036a3 in main () at sycl_hang.cpp:13
+

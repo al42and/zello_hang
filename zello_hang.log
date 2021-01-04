@@ -1,0 +1,28 @@
+$ make zello_hang 
+g++ zello_hang.cpp -g -o zello_hang -lze_loader
+
+$ gdb -q ./zello_hang
+Reading symbols from ./zello_hang...
+(gdb) r
+Starting program: /home/aland/sycl_tests/zello_hang 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[New Thread 0x7ffff6ef7640 (LWP 83496)]
+Driver initialized.
+Found ZE_DEVICE_TYPE_GPU device...
+Driver version: 16795999
+API version: 1.0
+Enqueueing event
+Checking event status
+Status: ZE_RESULT_NOT_READY
+Waiting on the event
+^C
+Thread 1 "zello_hang" received signal SIGINT, Interrupt.
+0x00007ffff7bef23b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+120     ../sysdeps/unix/syscall-template.S: No such file or directory.
+(gdb) bt
+#0  0x00007ffff7bef23b in sched_yield () at ../sysdeps/unix/syscall-template.S:120
+#1  0x00007ffff733197a in L0::EventImp::hostSynchronize(unsigned long) () from /usr/local/lib/libze_intel_gpu.so.1
+#2  0x00007ffff7f15b6e in zeEventHostSynchronize (hEvent=0x5555558fcbe0, timeout=18446744073709551615) at /home/aland/sycl_workspace/llvm/build/tools/sycl/plugins/level_zero/level_zero/level_zero_loader/source/lib/ze_libapi.cpp:2277
+#3  0x000055555555d7a8 in main (argc=1, argv=0x7fffffffc3e8) at zello_hang.cpp:113
+
