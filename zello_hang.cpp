@@ -61,20 +61,19 @@ int main( int argc, char *argv[] )
         exit(1);
     }
 
-    // Create an immediate command list for direct submission
-    ze_command_queue_desc_t altdesc = {};
-    ze_command_list_handle_t command_list_immediate = {};
-    status = zeCommandListCreateImmediate(context, pDevice, &altdesc, &command_list_immediate);
-    if(status != ZE_RESULT_SUCCESS) {
-        std::cout << "zeCommandListCreateImmediate Failed with return code: " << to_string(status) << std::endl;
-        exit(1);
-    }
-
     ze_command_list_desc_t cldesc = {};
     ze_command_list_handle_t command_list = {};
     status = zeCommandListCreate(context, pDevice, &cldesc, &command_list);
     if(status != ZE_RESULT_SUCCESS) {
         std::cout << "zeCommandListCreate Failed with return code: " << to_string(status) << std::endl;
+        exit(1);
+    }
+
+    ze_command_queue_desc_t qdesc = {};
+    ze_command_queue_handle_t command_queue = {};
+    status = zeCommandQueueCreate(context, pDevice, &qdesc, &command_queue);
+    if(status != ZE_RESULT_SUCCESS) {
+        std::cout << "zeCommandQueueCreate Failed with return code: " << to_string(status) << std::endl;
         exit(1);
     }
 
@@ -103,19 +102,19 @@ int main( int argc, char *argv[] )
     }
 
     std::cout << "Enqueueing event" << std::endl;
-    //zeCommandListAppendBarrier(command_list_immediate, event, 0, nullptr);
-    //zeCommandListAppendBarrier(command_list, event, 0, nullptr);
     zeCommandListAppendSignalEvent(command_list, event);
     std::cout << "Checking event status" << std::endl;
     status = zeEventHostSynchronize(event, 0);
     std::cout << "Status: " << to_string(status) << std::endl;
+    std::cout << "Executing the command list" << std::endl;
+    zeCommandQueueExecuteCommandLists(command_queue, 1, &command_list, nullptr);
     std::cout << "Waiting on the event" << std::endl;
     zeEventHostSynchronize(event, UINT64_MAX);
     std::cout << "Done!" << std::endl;
 
     zeContextDestroy(context);
     zeCommandListDestroy(command_list);
-    zeCommandListDestroy(command_list_immediate);
+    zeCommandQueueDestroy(command_queue);
     zeEventDestroy(event);
     zeEventPoolDestroy(event_pool);
 
