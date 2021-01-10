@@ -81,7 +81,7 @@ int main( int argc, char *argv[] )
     };
 
 
-    feenableexcept(FE_INVALID);
+    feenableexcept(FE_DIVBYZERO | FE_INVALID | FE_OVERFLOW);
 
     ze_module_handle_t mdl;
     zeModuleCreate(context, pDevice, &module_desc, &mdl, nullptr);
